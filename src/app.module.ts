@@ -7,6 +7,7 @@ import { ProdService } from './data/services/prod.service';
 import { PostagemModule } from './postagem/postagem.module';
 import { TemaModule } from './Tema/tema.module';
 import { UsuarioModule } from './usuario/usuario.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -20,7 +21,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     AuthModule,
     UsuarioModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}
